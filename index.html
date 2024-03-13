@@ -2,89 +2,95 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./index.css" />
-    <title>Test</title>
+    <title>Task</title>
   </head>
+
   <body>
-    <!--================ Header ======================= -->
+    <!-- Header -->
     <header class="header">
       <nav class="nav">
         <ul class="list links-menu">
-          <li class="links-item">
+          <li class="links-menu-item">
             <a
-              class="link nav-link"
               href="https://mail.google.com/"
               target="_blank"
               rel="noreferrer"
+              class="link links-menu-link"
               >Gmail</a
             >
           </li>
-          <li class="links-item">
-            <a
-              class="link nav-link"
-              href="https://www.google.com/imghp?hl=en&tab=ri&authuser=0&ogbl"
-              target="_blank"
-              rel="noreferrer"
-              >Зображення</a
-            >
+          <li class="links-menu-item">
+            <a href="" class="link links-menu-link">Зображення</a>
           </li>
         </ul>
         <ul class="list buttons-menu">
-          <li class="buttons-item button-icon">
-            <svg class="menu-icon" width="20" height="20">
-              <use href="./images/menu-icon.svg#menu"></use>
+          <li class="buttons-menu-item">
+            <svg class="buttons-menu-svg" width="20" height="20">
+              <use href="./images/svg/menu.svg#menu"></use>
             </svg>
           </li>
-          <li class="buttons-item">
-            <button type="button" class="login-button">Увійти</button>
+          <li>
+            <button type="button" class="buttons-menu-btn">Увійти</button>
           </li>
         </ul>
       </nav>
     </header>
-    <!--================ Main ======================= -->
+
+    <!-- Main -->
     <main>
       <section>
         <div class="container">
-          <img src="./images/google-logo.png" alt="logo" class="js-logo" />
           <img
-            src="./images/oddity.jpg"
-            alt="oddity"
-            class="hidden js-replacement"
+            src="./images/logo/google-logo.png"
+            alt="logo"
+            class="img-logo js-logo"
           />
-          <div>
-            <button type="button">
-              <svg class="" width="64" height="64">
-                <use href="./images/search-icon.svg#search"></use>
+          <img
+            src="./images/logo/oddity-logo.png"
+            alt="logo"
+            class="hidden img-logo js-replacement"
+          />
+          <div class="input-buttons-wrapper">
+            <button class="input-button search-btn">
+              <svg width="20" height="20">
+                <use href="./images/svg/search.svg#search"></use>
               </svg>
             </button>
-            <input type="search" />
-            <button type="button">
-              <svg class="" width="64" height="64">
-                <use href="./images/keyboard-icon.svg#keyboard"></use>
+            <input type="search" class="input" />
+
+            <button class="input-button">
+              <svg class="" width="20" height="20">
+                <use href="./images/svg/keyboard.svg#keyboard"></use>
               </svg>
             </button>
-            <button type="button">
-              <svg class="" width="64" height="64">
-                <use href="./images/microphone-icon.svg#micro"></use>
+            <button class="input-button">
+              <svg class="" width="20" height="20">
+                <use href="./images/svg/micro.svg#micro"></use>
               </svg>
             </button>
-            <button type="button">
-              <svg class="" width="64" height="64">
-                <use href="./images/camera-icon.svg#camera"></use>
+            <button class="input-button camera-btn">
+              <svg width="20" height="20">
+                <use href="./images/svg/camera.svg#camera"></use>
               </svg>
             </button>
           </div>
 
-          <div>
-            <ul class="list">
-              <li><button type="button">Пошук Google</button></li>
+          <div class="btns-wrapper">
+            <ul class="list btns-list">
               <li>
-                <button type="button" id="toggleButton">Мені пощастить</button>
+                <button type="button" class="btns-button">Пошук Google</button>
+              </li>
+              <li>
+                <button type="button" id="toggleButton" class="btns-button">
+                  Мені пощастить
+                </button>
               </li>
             </ul>
             <p>Мова Google: <span>English</span></p>
@@ -92,17 +98,21 @@
         </div>
       </section>
     </main>
-    <!--================ Footer ======================= -->
-    <footer>
-      <div><p>Україна</p></div>
-      <div>
-        <ul class="list">
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-wrapper-location">
+        <p>Україна</p>
+      </div>
+
+      <div class="footer-wrapper-info">
+        <ul class="list footer-list">
           <li>Про Google</li>
           <li>Реклама</li>
           <li>Для бізнесу</li>
           <li>Як працює Пошук</li>
         </ul>
-        <ul class="list">
+        <ul class="list footer-list">
           <li>Конфіденційність</li>
           <li>Умови</li>
           <li>Налаштування</li>
